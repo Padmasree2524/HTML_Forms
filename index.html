@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>EduLearn Academy</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="bg1"></div>
+<div class="bg2"></div>
+
+<div class="container">
+
+<div class="left">
+
+<div class="logo">
+
+🎓
+
+</div>
+
+<h1>EduLearn Academy</h1>
+
+<p>
+
+Learn • Build • Grow
+
+</p>
+
+<div class="line"></div>
+
+<div class="card">
+
+<h3>✨ Why Choose Us?</h3>
+
+<ul>
+
+<li>Expert Trainers</li>
+
+<li>Industry Projects</li>
+
+<li>Placement Assistance</li>
+
+<li>Live Classes</li>
+
+<li>Certification</li>
+
+</ul>
+
+</div>
+
+</div>
+
+<div class="right">
+
+<h2>Student Registration</h2>
+
+<form id="form">
+
+<div class="row">
+
+<div class="input-box">
+
+<label>Full Name</label>
+
+<input type="text" required>
+
+</div>
+
+<div class="input-box">
+
+<label>Email</label>
+
+<input type="email" required>
+
+</div>
+
+</div>
+
+<div class="row">
+
+<div class="input-box">
+
+<label>Phone</label>
+
+<input type="tel" required>
+
+</div>
+
+<div class="input-box">
+
+<label>Date of Birth</label>
+
+<input type="date" required>
+
+</div>
+
+</div>
+<div class="row">
+
+    <div class="input-box">
+
+        <label>Password</label>
+
+        <input type="password" placeholder="Create Password" required>
+
+    </div>
+
+    <div class="input-box">
+
+        <label>Select Course</label>
+
+        <select required>
+
+            <option value="">Choose Course</option>
+
+            <option>Web Development</option>
+
+            <option>Java Full Stack</option>
+
+            <option>Python Programming</option>
+
+            <option>Data Science</option>
+
+            <option>UI / UX Design</option>
+
+        </select>
+
+    </div>
+
+</div>
+
+<label>Gender</label>
+
+<div class="gender">
+
+    <label><input type="radio" name="gender"> Male</label>
+
+    <label><input type="radio" name="gender"> Female</label>
+
+    <label><input type="radio" name="gender"> Other</label>
+
+</div>
+
+<label>Skills</label>
+
+<div class="skills">
+
+    <label><input type="checkbox"> HTML</label>
+
+    <label><input type="checkbox"> CSS</label>
+
+    <label><input type="checkbox"> JavaScript</label>
+
+    <label><input type="checkbox"> Python</label>
+
+</div>
+
+<label>Address</label>
+
+<textarea rows="3" placeholder="Enter your address"></textarea>
+
+<label>Why do you want to join?</label>
+
+<textarea rows="3" placeholder="Write your message"></textarea>
+
+<div class="terms">
+
+<label>
+
+<input type="checkbox" required>
+
+I agree to the Terms & Conditions
+
+</label>
+
+</div>
+
+<button class="btn" type="submit">
+
+🚀 Register Now
+
+</button>
+
+</form>
+
+</div>
+
+</div>
+<!-- Success Popup -->
+
+<div class="success-popup" id="successPopup">
+
+    <div class="popup-card">
+
+        <div class="tick">✔</div>
+
+        <h2>Registration Successful!</h2>
+
+        <p>
+            Welcome to <b>EduLearn Academy</b> 🎉<br>
+            Your registration has been submitted successfully.
+        </p>
+
+        <button onclick="closePopup()">Go Back</button>
+
+    </div>
+
+</div>
+
+<script>
+
+const form = document.getElementById("form");
+const popup = document.getElementById("successPopup");
+
+form.addEventListener("submit", function(e){
+
+    e.preventDefault();
+
+    popup.style.display = "flex";
+
+});
+
+function closePopup(){
+
+    popup.style.display = "none";
+
+    form.reset();
+
+}
+
+</script>
+
+</body>
+</html>
